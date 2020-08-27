@@ -1,0 +1,77 @@
+@import "utilities/mixins";
+@import "utilities/placeholders";
+@import "utilities/variables";
+
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: $heading-font;
+}
+
+@include jump-animation(jump-0, 0);
+@include jump-animation(jump-1, 1);
+@include jump-animation(jump-2, 2);
+@include jump-animation(jump-3, 3);
+
+
+
+
+
+
+
+
+header {
+    background-color: black;
+    // height: 400px;
+    // max-height: 100vh;
+    padding: 100px 0;
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 4em;
+    }
+
+    .dots {
+        position: relative;
+        height: (2 * $dot-jump) + $dot-size;
+        width: $total-dots * $dot-size;
+        margin: 0 auto;
+    
+        .dot {
+            height: $dot-size;
+            width: $dot-size;
+            position: absolute;
+            border-radius: 100%;
+        }
+
+        @for $i from 1 to ($total-dots + 1) {
+            .dot:nth-child(#{$i}) {
+                background-color: adjust-hue($color: $start-color, $degrees: (360/($total-dots - 1))*($i - 1));
+                left: (($i - 1)*$dot-size);
+
+                @if ($i % 4 == 0){
+                    animation: jump-0 $wave-length linear infinite;
+                }
+                @else if($i % 4 == 1){
+                    animation: jump-1 $wave-length linear infinite;
+                }
+                @else if($i % 4 == 2){
+                    animation: jump-2 $wave-length linear infinite;
+                }
+                @else if($i % 4 == 3){
+                    animation: jump-3 $wave-length linear infinite;
+                }
+            }
+        }
+    
+    }
+
+    
+}
+

@@ -1,0 +1,13 @@
+$dot-size: 15px;
+$total-dots: 20;
+$start-color: orangered;
+$dot-jump: 10px;
+$wave-length: 1.4s;
+$heading-font: 'Roboto', sans-serif;
+
+$start-positions: (
+    0: $dot-jump, 
+    1: $dot-jump * 2, 
+    2: $dot-jump,
+    3: 0
+);
