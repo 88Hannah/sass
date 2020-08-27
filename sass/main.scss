@@ -27,8 +27,8 @@ h1 {
 
 header {
     background-color: black;
-    height: 400px;
-    max-height: 100vh;
+    // height: 400px;
+    // max-height: 100vh;
     padding: 100px 0;
 
     h1 {
@@ -52,7 +52,7 @@ header {
 
         @for $i from 1 to ($total-dots + 1) {
             .dot:nth-child(#{$i}) {
-                background-color: adjust-hue($color: $start-color, $degrees: (360/$total-dots)*$i);
+                background-color: adjust-hue($color: $start-color, $degrees: (360/($total-dots - 1))*($i - 1));
                 left: (($i - 1)*$dot-size);
 
                 @if ($i % 4 == 0){
