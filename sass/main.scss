@@ -13,6 +13,16 @@ h1 {
     font-family: $heading-font;
 }
 
+@include jump-animation(jump-0, 0);
+@include jump-animation(jump-1, 1);
+@include jump-animation(jump-2, 2);
+@include jump-animation(jump-3, 3);
+
+
+
+
+
+
 
 
 header {
@@ -44,19 +54,18 @@ header {
             .dot:nth-child(#{$i}) {
                 background-color: adjust-hue($color: $start-color, $degrees: (360/$total-dots)*$i);
                 left: (($i - 1)*$dot-size);
-                animation: jump 1.2s linear $i*0.3s infinite;
 
                 @if ($i % 4 == 0){
-                    top: $dot-jump;
+                    animation: jump-0 $wave-length linear infinite;
                 }
                 @else if($i % 4 == 1){
-                    top: $dot-jump * 2;
+                    animation: jump-1 $wave-length linear infinite;
                 }
                 @else if($i % 4 == 2){
-                    top: $dot-jump;
+                    animation: jump-2 $wave-length linear infinite;
                 }
                 @else if($i % 4 == 3){
-                    top: 0;
+                    animation: jump-3 $wave-length linear infinite;
                 }
             }
         }
@@ -66,10 +75,3 @@ header {
     
 }
 
-
-@keyframes jump {
-    0% {top: $dot-jump}
-    25% {top: $dot-jump * 2}
-    75% {top: 0}
-    100% {top: $dot-jump}
-}

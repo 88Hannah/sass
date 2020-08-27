@@ -1,0 +1,9 @@
+@mixin jump-animation($name, $start) {
+    @keyframes #{$name} {
+        0% {top: map-get($start-positions, ($start) % 4)}
+        25% {top: map-get($start-positions, ($start + 1) % 4)}
+        50% {top: map-get($start-positions, ($start + 2) % 4)}
+        75% {top: map-get($start-positions, ($start + 3) % 4)}
+        100% {top: map-get($start-positions, ($start + 4) % 4)}
+    }
+}
