@@ -4,10 +4,22 @@ $start-color: orangered;
 $dot-jump: 10px;
 $wave-length: 1.4s;
 $heading-font: 'Roboto', sans-serif;
+$main-font: 'Lato', sans-serif;
 
 $start-positions: (
     0: $dot-jump, 
     1: $dot-jump * 2, 
     2: $dot-jump,
     3: 0
+);
+
+
+$content-width: 900px;
+
+
+$title-colors: (
+    1: adjust-hue($color: $start-color, $degrees: (0)),
+    2: adjust-hue($color: $start-color, $degrees: (360/4)),
+    3: adjust-hue($color: $start-color, $degrees: (360/4*2)),
+    4: adjust-hue($color: $start-color, $degrees: (360/4*3))
 );
