@@ -1,0 +1,228 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: black;
+  height: 400px;
+  max-height: 100vh;
+  padding: 100px 0;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+}
+
+header .dots {
+  position: relative;
+  height: 40px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+header .dots .dot {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border-radius: 100%;
+}
+
+header .dots .dot:nth-child(1) {
+  background-color: #4d00ff;
+  left: 0px;
+  -webkit-animation: jump 1.2s linear 0.3s infinite;
+          animation: jump 1.2s linear 0.3s infinite;
+  top: 20px;
+}
+
+header .dots .dot:nth-child(2) {
+  background-color: #9900ff;
+  left: 20px;
+  -webkit-animation: jump 1.2s linear 0.6s infinite;
+          animation: jump 1.2s linear 0.6s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(3) {
+  background-color: #e600ff;
+  left: 40px;
+  -webkit-animation: jump 1.2s linear 0.9s infinite;
+          animation: jump 1.2s linear 0.9s infinite;
+  top: 0;
+}
+
+header .dots .dot:nth-child(4) {
+  background-color: #ff00cc;
+  left: 60px;
+  -webkit-animation: jump 1.2s linear 1.2s infinite;
+          animation: jump 1.2s linear 1.2s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(5) {
+  background-color: #ff0080;
+  left: 80px;
+  -webkit-animation: jump 1.2s linear 1.5s infinite;
+          animation: jump 1.2s linear 1.5s infinite;
+  top: 20px;
+}
+
+header .dots .dot:nth-child(6) {
+  background-color: #ff0033;
+  left: 100px;
+  -webkit-animation: jump 1.2s linear 1.8s infinite;
+          animation: jump 1.2s linear 1.8s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(7) {
+  background-color: #ff1a00;
+  left: 120px;
+  -webkit-animation: jump 1.2s linear 2.1s infinite;
+          animation: jump 1.2s linear 2.1s infinite;
+  top: 0;
+}
+
+header .dots .dot:nth-child(8) {
+  background-color: #ff6600;
+  left: 140px;
+  -webkit-animation: jump 1.2s linear 2.4s infinite;
+          animation: jump 1.2s linear 2.4s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(9) {
+  background-color: #ffb300;
+  left: 160px;
+  -webkit-animation: jump 1.2s linear 2.7s infinite;
+          animation: jump 1.2s linear 2.7s infinite;
+  top: 20px;
+}
+
+header .dots .dot:nth-child(10) {
+  background-color: yellow;
+  left: 180px;
+  -webkit-animation: jump 1.2s linear 3s infinite;
+          animation: jump 1.2s linear 3s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(11) {
+  background-color: #b3ff00;
+  left: 200px;
+  -webkit-animation: jump 1.2s linear 3.3s infinite;
+          animation: jump 1.2s linear 3.3s infinite;
+  top: 0;
+}
+
+header .dots .dot:nth-child(12) {
+  background-color: #66ff00;
+  left: 220px;
+  -webkit-animation: jump 1.2s linear 3.6s infinite;
+          animation: jump 1.2s linear 3.6s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(13) {
+  background-color: #1aff00;
+  left: 240px;
+  -webkit-animation: jump 1.2s linear 3.9s infinite;
+          animation: jump 1.2s linear 3.9s infinite;
+  top: 20px;
+}
+
+header .dots .dot:nth-child(14) {
+  background-color: #00ff33;
+  left: 260px;
+  -webkit-animation: jump 1.2s linear 4.2s infinite;
+          animation: jump 1.2s linear 4.2s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(15) {
+  background-color: #00ff80;
+  left: 280px;
+  -webkit-animation: jump 1.2s linear 4.5s infinite;
+          animation: jump 1.2s linear 4.5s infinite;
+  top: 0;
+}
+
+header .dots .dot:nth-child(16) {
+  background-color: #00ffcc;
+  left: 300px;
+  -webkit-animation: jump 1.2s linear 4.8s infinite;
+          animation: jump 1.2s linear 4.8s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(17) {
+  background-color: #00e6ff;
+  left: 320px;
+  -webkit-animation: jump 1.2s linear 5.1s infinite;
+          animation: jump 1.2s linear 5.1s infinite;
+  top: 20px;
+}
+
+header .dots .dot:nth-child(18) {
+  background-color: #0099ff;
+  left: 340px;
+  -webkit-animation: jump 1.2s linear 5.4s infinite;
+          animation: jump 1.2s linear 5.4s infinite;
+  top: 10px;
+}
+
+header .dots .dot:nth-child(19) {
+  background-color: #004dff;
+  left: 360px;
+  -webkit-animation: jump 1.2s linear 5.7s infinite;
+          animation: jump 1.2s linear 5.7s infinite;
+  top: 0;
+}
+
+header .dots .dot:nth-child(20) {
+  background-color: blue;
+  left: 380px;
+  -webkit-animation: jump 1.2s linear 6s infinite;
+          animation: jump 1.2s linear 6s infinite;
+  top: 10px;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 10px;
+  }
+  25% {
+    top: 20px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 10px;
+  }
+  25% {
+    top: 20px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    top: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
