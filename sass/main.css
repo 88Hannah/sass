@@ -342,33 +342,120 @@ header .dots .dot:nth-child(20) {
   padding: 0 10%;
 }
 
-section:nth-child(odd) {
+.container .section-text h2 {
+  padding-bottom: 0.6em;
+}
+
+.container .section-text p {
+  line-height: 1.6em;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container .section-img {
+    margin: 1em auto 0;
+  }
+}
+
+section:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.678);
 }
 
-section:nth-child(odd) .section-img {
+section:nth-of-type(even) .section-img {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-section:nth-child(odd) p {
+section:nth-of-type(even) p {
   color: white;
 }
 
-section:nth-child(1) h2 {
+section:nth-of-type(1) h2 {
   color: orangered;
 }
 
-section:nth-child(2) h2 {
+section:nth-of-type(1) button {
+  text-transform: uppercase;
+  padding: 0.8em 2.4em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  background-color: orangered;
+  border: 2px solid transparent;
+}
+
+section:nth-of-type(1) button:hover {
+  background-color: white;
+  border: 2px solid orangered;
+  cursor: pointer;
+}
+
+section:nth-of-type(2) h2 {
   color: #3bff00;
 }
 
-section:nth-child(3) h2 {
+section:nth-of-type(2) button {
+  text-transform: uppercase;
+  padding: 0.8em 2.4em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  background-color: #3bff00;
+  border: 2px solid transparent;
+}
+
+section:nth-of-type(2) button:hover {
+  background-color: white;
+  border: 2px solid #3bff00;
+  cursor: pointer;
+}
+
+section:nth-of-type(3) h2 {
   color: #00baff;
 }
 
-section:nth-child(4) h2 {
+section:nth-of-type(3) button {
+  text-transform: uppercase;
+  padding: 0.8em 2.4em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  background-color: #00baff;
+  border: 2px solid transparent;
+}
+
+section:nth-of-type(3) button:hover {
+  background-color: white;
+  border: 2px solid #00baff;
+  cursor: pointer;
+}
+
+section:nth-of-type(4) h2 {
   color: #c500ff;
+}
+
+section:nth-of-type(4) button {
+  text-transform: uppercase;
+  padding: 0.8em 2.4em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  background-color: #c500ff;
+  border: 2px solid transparent;
+}
+
+section:nth-of-type(4) button:hover {
+  background-color: white;
+  border: 2px solid #c500ff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

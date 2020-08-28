@@ -95,15 +95,29 @@ header {
         padding: 0 10%;
     
         h2 {
-            // color: $color-4;
+            padding-bottom: 0.6em;
+        }
+
+        p {
+            line-height: 1.6em;
+            text-align: justify;
         }
     }
+}
 
+@media (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
 
+        .section-img {
+            margin: 1em auto 0;
+        }
+    }
 }
 
 
-section:nth-child(odd) {
+
+section:nth-of-type(even) {
     background: hsla(0, 0%, 0%, 0.678);
     
     .section-img {
@@ -117,13 +131,16 @@ section:nth-child(odd) {
 
 
 @for $i from 1 to 5 {
-    section:nth-child(#{$i}) {
+    section:nth-of-type(#{$i}) {
         h2 {
-            color: map-get($title-colors, $i);
+            color: map-get($section-colors, $i);
+        }
+
+        button {
+            @include style-button(map-get($section-colors, $i));
         }
     }
 }
-
 
 
 

@@ -17,7 +17,7 @@ $start-positions: (
 $content-width: 900px;
 
 
-$title-colors: (
+$section-colors: (
     1: adjust-hue($color: $start-color, $degrees: (0)),
     2: adjust-hue($color: $start-color, $degrees: (360/4)),
     3: adjust-hue($color: $start-color, $degrees: (360/4*2)),
