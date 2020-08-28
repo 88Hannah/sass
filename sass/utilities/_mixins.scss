@@ -1,3 +1,4 @@
+// Jump animation used in header to animate the dots
 @mixin jump-animation($name, $start) {
     @keyframes #{$name} {
         0% {top: map-get($start-positions, ($start) % 4)}
@@ -9,7 +10,7 @@
 }
 
 
-
+// Section buttons styling
 @mixin style-button($color) {
     text-transform: uppercase;
     padding: 0.8em 2.4em;
@@ -25,5 +26,4 @@
         border: 2px solid $color;
         cursor: pointer;
     }
-
 }

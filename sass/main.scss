@@ -1,8 +1,7 @@
 @import "utilities/mixins";
-@import "utilities/placeholders";
 @import "utilities/variables";
 
-
+// General settings
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -17,17 +16,12 @@ p {
     font-family: $main-font;
 }
 
+
+// Header
 @include jump-animation(jump-0, 0);
 @include jump-animation(jump-1, 1);
 @include jump-animation(jump-2, 2);
 @include jump-animation(jump-3, 3);
-
-
-
-
-
-
-
 
 header {
     background-color: black;
@@ -71,14 +65,11 @@ header {
                 }
             }
         }
-    
-    }
-
-    
+    }  
 }
 
 
-
+// Main sections
 .container {
     width: 85%;
     max-width: $content-width-small;
@@ -121,10 +112,6 @@ section:nth-of-type(even) {
     }
 }
 
-
-
-
-
 @media (min-width: 800px) {
 
     .container {
@@ -148,20 +135,15 @@ section:nth-of-type(even) {
             margin-right: 50px;
         }
     }
-
 }
 
-
+// Footer
 footer {
     background-color: black;
+    text-align: center;
 
     .logo {
-        width: 180px;
-        padding: 15px 0 15px 20px;
+        width: 160px;
+        padding: 15px 0 15px;
     }
 }
-
-
-
-
-
