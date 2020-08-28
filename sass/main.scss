@@ -152,7 +152,14 @@ section:nth-of-type(even) {
 }
 
 
+footer {
+    background-color: black;
 
+    .logo {
+        width: 180px;
+        padding: 15px 0 15px 20px;
+    }
+}
 
 
 

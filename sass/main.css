@@ -459,4 +459,13 @@ section:nth-of-type(4) button:hover {
     margin-right: 50px;
   }
 }
+
+footer {
+  background-color: black;
+}
+
+footer .logo {
+  width: 180px;
+  padding: 15px 0 15px 20px;
+}
 /*# sourceMappingURL=main.css.map */
