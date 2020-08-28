@@ -1,6 +1,6 @@
 $dot-size: 15px;
 $total-dots: 20;
-$start-color: orangered;
+$start-color: rgb(16, 224, 16);
 $dot-jump: 10px;
 $wave-length: 1.4s;
 $heading-font: 'Roboto', sans-serif;
@@ -14,7 +14,8 @@ $start-positions: (
 );
 
 
-$content-width: 900px;
+$content-width-large: 900px;
+$content-width-small: 500px;
 
 
 $section-colors: (

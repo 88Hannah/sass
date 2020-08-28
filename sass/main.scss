@@ -79,56 +79,35 @@ header {
 
 
 
-
-
 .container {
-    width: 90%;
-    max-width: $content-width;
+    width: 85%;
+    max-width: $content-width-small;
     margin: 0 auto;
-    display: flex;
-    // flex-wrap: wrap; ADD BACK IN FOR MOBILE
-    align-items: center;
-    justify-content: space-between;
     padding: 40px 0;
 
-    .section-text {
-        padding: 0 10%;
-    
-        h2 {
-            padding-bottom: 0.6em;
-        }
+    h2 {
+        padding-bottom: 0.6em;
+    }
 
-        p {
-            line-height: 1.6em;
-            text-align: justify;
-        }
+    p {
+        line-height: 1.6em;
+        text-align: justify;
+    }
+
+    .section-img {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 2em;
     }
 }
-
-@media (max-width: 800px) {
-    .container {
-        flex-wrap: wrap;
-
-        .section-img {
-            margin: 1em auto 0;
-        }
-    }
-}
-
-
 
 section:nth-of-type(even) {
     background: hsla(0, 0%, 0%, 0.678);
-    
-    .section-img {
-        order: 1;
-    }
 
     p {
         color: white;
     }
 }
-
 
 @for $i from 1 to 5 {
     section:nth-of-type(#{$i}) {
@@ -141,6 +120,41 @@ section:nth-of-type(even) {
         }
     }
 }
+
+
+
+
+
+@media (min-width: 800px) {
+
+    .container {
+        max-width: $content-width-large;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section:nth-of-type(even) {
+        
+        .section-text {
+            order: 1;
+            margin-left: 50px;
+        }
+        
+    }
+    
+    section:nth-of-type(odd) {
+        .section-text {
+            margin-right: 50px;
+        }
+    }
+
+}
+
+
+
+
+
 
 
 

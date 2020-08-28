@@ -183,192 +183,169 @@ header .dots .dot {
 }
 
 header .dots .dot:nth-child(1) {
-  background-color: orangered;
+  background-color: #10e010;
   left: 0px;
   -webkit-animation: jump-1 1.4s linear infinite;
           animation: jump-1 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(2) {
-  background-color: #ff9600;
+  background-color: #10e052;
   left: 15px;
   -webkit-animation: jump-2 1.4s linear infinite;
           animation: jump-2 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(3) {
-  background-color: #ffe600;
+  background-color: #10e093;
   left: 30px;
   -webkit-animation: jump-3 1.4s linear infinite;
           animation: jump-3 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(4) {
-  background-color: #c7ff00;
+  background-color: #10e0d5;
   left: 45px;
   -webkit-animation: jump-0 1.4s linear infinite;
           animation: jump-0 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(5) {
-  background-color: #77ff00;
+  background-color: #10a9e0;
   left: 60px;
   -webkit-animation: jump-1 1.4s linear infinite;
           animation: jump-1 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(6) {
-  background-color: #26ff00;
+  background-color: #1068e0;
   left: 75px;
   -webkit-animation: jump-2 1.4s linear infinite;
           animation: jump-2 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(7) {
-  background-color: #00ff2a;
+  background-color: #1026e0;
   left: 90px;
   -webkit-animation: jump-3 1.4s linear infinite;
           animation: jump-3 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(8) {
-  background-color: #00ff7b;
+  background-color: #3c10e0;
   left: 105px;
   -webkit-animation: jump-0 1.4s linear infinite;
           animation: jump-0 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(9) {
-  background-color: #00ffcb;
+  background-color: #7d10e0;
   left: 120px;
   -webkit-animation: jump-1 1.4s linear infinite;
           animation: jump-1 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(10) {
-  background-color: #00e2ff;
+  background-color: #bf10e0;
   left: 135px;
   -webkit-animation: jump-2 1.4s linear infinite;
           animation: jump-2 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(11) {
-  background-color: #0092ff;
+  background-color: #e010bf;
   left: 150px;
   -webkit-animation: jump-3 1.4s linear infinite;
           animation: jump-3 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(12) {
-  background-color: #0041ff;
+  background-color: #e0107d;
   left: 165px;
   -webkit-animation: jump-0 1.4s linear infinite;
           animation: jump-0 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(13) {
-  background-color: #0f00ff;
+  background-color: #e0103c;
   left: 180px;
   -webkit-animation: jump-1 1.4s linear infinite;
           animation: jump-1 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(14) {
-  background-color: #6000ff;
+  background-color: #e02610;
   left: 195px;
   -webkit-animation: jump-2 1.4s linear infinite;
           animation: jump-2 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(15) {
-  background-color: #b000ff;
+  background-color: #e06810;
   left: 210px;
   -webkit-animation: jump-3 1.4s linear infinite;
           animation: jump-3 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(16) {
-  background-color: #ff00fd;
+  background-color: #e0a910;
   left: 225px;
   -webkit-animation: jump-0 1.4s linear infinite;
           animation: jump-0 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(17) {
-  background-color: #ff00ad;
+  background-color: #d5e010;
   left: 240px;
   -webkit-animation: jump-1 1.4s linear infinite;
           animation: jump-1 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(18) {
-  background-color: #ff005c;
+  background-color: #93e010;
   left: 255px;
   -webkit-animation: jump-2 1.4s linear infinite;
           animation: jump-2 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(19) {
-  background-color: #ff000c;
+  background-color: #52e010;
   left: 270px;
   -webkit-animation: jump-3 1.4s linear infinite;
           animation: jump-3 1.4s linear infinite;
 }
 
 header .dots .dot:nth-child(20) {
-  background-color: orangered;
+  background-color: #10e010;
   left: 285px;
   -webkit-animation: jump-0 1.4s linear infinite;
           animation: jump-0 1.4s linear infinite;
 }
 
 .container {
-  width: 90%;
-  max-width: 900px;
+  width: 85%;
+  max-width: 500px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 40px 0;
 }
 
-.container .section-text {
-  padding: 0 10%;
-}
-
-.container .section-text h2 {
+.container h2 {
   padding-bottom: 0.6em;
 }
 
-.container .section-text p {
+.container p {
   line-height: 1.6em;
   text-align: justify;
 }
 
-@media (max-width: 800px) {
-  .container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .container .section-img {
-    margin: 1em auto 0;
-  }
+.container .section-img {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
 section:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.678);
-}
-
-section:nth-of-type(even) .section-img {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
 }
 
 section:nth-of-type(even) p {
@@ -376,7 +353,7 @@ section:nth-of-type(even) p {
 }
 
 section:nth-of-type(1) h2 {
-  color: orangered;
+  color: #10e010;
 }
 
 section:nth-of-type(1) button {
@@ -386,18 +363,18 @@ section:nth-of-type(1) button {
   border: none;
   border-radius: 50px;
   font-weight: 700;
-  background-color: orangered;
+  background-color: #10e010;
   border: 2px solid transparent;
 }
 
 section:nth-of-type(1) button:hover {
   background-color: white;
-  border: 2px solid orangered;
+  border: 2px solid #10e010;
   cursor: pointer;
 }
 
 section:nth-of-type(2) h2 {
-  color: #3bff00;
+  color: #1078e0;
 }
 
 section:nth-of-type(2) button {
@@ -407,18 +384,18 @@ section:nth-of-type(2) button {
   border: none;
   border-radius: 50px;
   font-weight: 700;
-  background-color: #3bff00;
+  background-color: #1078e0;
   border: 2px solid transparent;
 }
 
 section:nth-of-type(2) button:hover {
   background-color: white;
-  border: 2px solid #3bff00;
+  border: 2px solid #1078e0;
   cursor: pointer;
 }
 
 section:nth-of-type(3) h2 {
-  color: #00baff;
+  color: #e010e0;
 }
 
 section:nth-of-type(3) button {
@@ -428,18 +405,18 @@ section:nth-of-type(3) button {
   border: none;
   border-radius: 50px;
   font-weight: 700;
-  background-color: #00baff;
+  background-color: #e010e0;
   border: 2px solid transparent;
 }
 
 section:nth-of-type(3) button:hover {
   background-color: white;
-  border: 2px solid #00baff;
+  border: 2px solid #e010e0;
   cursor: pointer;
 }
 
 section:nth-of-type(4) h2 {
-  color: #c500ff;
+  color: #e07810;
 }
 
 section:nth-of-type(4) button {
@@ -449,13 +426,37 @@ section:nth-of-type(4) button {
   border: none;
   border-radius: 50px;
   font-weight: 700;
-  background-color: #c500ff;
+  background-color: #e07810;
   border: 2px solid transparent;
 }
 
 section:nth-of-type(4) button:hover {
   background-color: white;
-  border: 2px solid #c500ff;
+  border: 2px solid #e07810;
   cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .container {
+    max-width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section:nth-of-type(even) .section-text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 50px;
+  }
+  section:nth-of-type(odd) .section-text {
+    margin-right: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
